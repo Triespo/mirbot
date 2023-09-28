@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinalViewController" customModule="mirbot">
+            <connections>
+                <outlet property="robotMessageTextView" destination="K2i-5w-h3B" id="VhH-Mp-8jd"/>
+                <outlet property="robotView" destination="Eg6-ab-jOZ" id="JUN-fc-OvP"/>
+                <outlet property="theScrollView" destination="PgT-dv-JYw" id="W8y-YI-bus"/>
+                <outlet property="toolBar" destination="ysm-Iy-FAE" id="Uy7-Gr-Os1"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cf1-ov-aai"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgT-dv-JYw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-5w-h3B">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="216" id="zwX-iZ-oiD"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eg6-ab-jOZ">
+                            <rect key="frame" x="41" y="89" width="238" height="255"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="238" id="7K7-yy-slE"/>
+                                <constraint firstAttribute="height" constant="255" id="kT9-Eg-Kf2"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="K2i-5w-h3B" firstAttribute="leading" secondItem="PgT-dv-JYw" secondAttribute="leading" id="B3O-Pc-rzW"/>
+                        <constraint firstAttribute="bottom" secondItem="Eg6-ab-jOZ" secondAttribute="bottom" constant="175" id="MCs-Ml-dYD"/>
+                        <constraint firstAttribute="trailing" secondItem="Eg6-ab-jOZ" secondAttribute="trailing" constant="41" id="O88-r5-6BZ"/>
+                        <constraint firstItem="K2i-5w-h3B" firstAttribute="top" secondItem="PgT-dv-JYw" secondAttribute="top" id="jgJ-f7-YOU"/>
+                        <constraint firstItem="Eg6-ab-jOZ" firstAttribute="top" secondItem="PgT-dv-JYw" secondAttribute="top" constant="89" id="sJ0-4r-O5y"/>
+                        <constraint firstItem="Eg6-ab-jOZ" firstAttribute="leading" secondItem="PgT-dv-JYw" secondAttribute="leading" constant="41" id="vzD-av-4Ik"/>
+                        <constraint firstItem="K2i-5w-h3B" firstAttribute="centerX" secondItem="Eg6-ab-jOZ" secondAttribute="centerX" id="yZ4-3r-WzJ"/>
+                    </constraints>
+                </scrollView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysm-Iy-FAE">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <items>
+                        <barButtonItem title="Item" id="KSj-XY-tX9"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PgT-dv-JYw" firstAttribute="trailing" secondItem="ysm-Iy-FAE" secondAttribute="trailing" id="2i3-NE-25T"/>
+                <constraint firstAttribute="trailing" secondItem="PgT-dv-JYw" secondAttribute="trailing" id="6D2-BQ-Ssp"/>
+                <constraint firstItem="PgT-dv-JYw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PZ3-bl-wQw"/>
+                <constraint firstAttribute="bottom" secondItem="PgT-dv-JYw" secondAttribute="bottom" constant="49" id="SyQ-8G-3eB"/>
+                <constraint firstItem="PgT-dv-JYw" firstAttribute="leading" secondItem="ysm-Iy-FAE" secondAttribute="leading" id="TRQ-ZR-aHb"/>
+                <constraint firstItem="ysm-Iy-FAE" firstAttribute="top" secondItem="PgT-dv-JYw" secondAttribute="bottom" constant="5" id="UvX-Q6-2Yu"/>
+                <constraint firstItem="PgT-dv-JYw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oYG-od-woh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
